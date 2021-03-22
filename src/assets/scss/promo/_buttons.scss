@@ -1,0 +1,30 @@
+.hautelook a.btn_underline,
+.hautelook .btn_underline a {
+	display: inline-block;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	border-bottom: 1px solid #454546;
+	line-height: 1;
+	margin-bottom: 20px;
+	text-decoration: none;
+	color: #454546;
+
+	span { letter-spacing: 0; }
+}
+
+.nordstromrack a.btn_underline,
+.nordstromrack .btn_underline a {
+	font-weight: 600;
+	text-decoration: underline;
+	color: #454546;
+}
+
+.nordstromrack a.btn_underline,
+.nordstromrack .btn_underline a,
+.hautelook a.btn_underline,
+.hautelook .btn_underline a {
+	&:hover,
+	&:active,
+	&:focus { color: #454546; }
+}

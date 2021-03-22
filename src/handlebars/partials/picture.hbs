@@ -1,0 +1,15 @@
+{{#if href}}
+<a href="{{href}}" class="displayblock {{class}}" onClick="ga('send', 'event', 'link', '{{tile}}', '{{desc}}');" >
+	<picture>
+		<source srcset="{{src}}.jpg, {{src}}@2x.jpg 2x" media="(min-width:640px)">
+		<source srcset="{{src}}-mobile.jpg">
+		<img src="{{src}}.jpg" alt="{{alt}}">
+	</picture>
+</a>
+{{else}}
+<picture class="displayblock {{class}}">
+	<source srcset="{{src}}.jpg, {{src}}@2x.jpg 2x" media="(min-width:640px)">
+	<source srcset="{{src}}-mobile.jpg">
+	<img src="{{src}}.jpg" alt="{{alt}}">
+</picture>
+{{/if}}

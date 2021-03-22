@@ -1,0 +1,131 @@
+.fyr-banner {
+	display: grid;
+	grid-template-columns: auto;
+	grid-row: auto;
+	margin: 1em auto;
+	background: url(https://fastly.hautelookcdn.com/ck16rk8sg00ix1froayfiey90/find-your-rack-mobile.png) center center no-repeat;
+	background-size: cover;
+	font-size: 5.625vw;
+	width: 100%;
+	height: 10em;
+
+	@media screen and (min-width: 768px) {
+		font-size: 18px;
+		width: 960px;
+		height: 120px;
+		background: url(https://fastly.hautelookcdn.com/ck16rk8sg00ix1froayfiey90/find-your-rack@2x.png) center center no-repeat;
+		background-size: contain;
+		text-align: center;
+	}
+
+	.fyr-content {
+		grid-column: 1;
+		grid-row: 1;
+		align-self: center;
+		text-align: center;
+		justify-self: center;
+		color: #fff;
+
+		@media screen and (min-width: 768px) {
+			text-align: left;
+		}
+	}
+
+	.fyrmarker {
+		width: 2em;
+		height: 2em;
+		background: url(https://fastly.hautelookcdn.com/ck16rk8sg00ix1froayfiey90/find-your-rack-marker@2x.png) center center no-repeat;
+		background-size: contain;
+		grid-column: 1;
+		grid-row: 1;
+		align-self: center;
+		justify-self: start;
+		margin-top: 2em;
+		margin-left: 3em;
+
+		@media screen and (min-width: 768px) {
+			transform: translateX(220px);
+			width: 52px;
+			height: 75px;
+			margin-left: 0;
+			margin-top: 0;
+		}
+	}
+
+	.fyrlink {
+		grid-column: 1;
+		grid-row: 1;
+		position: relative;
+		z-index: 1;
+		text-decoration: none;
+	}
+
+	.fyr-dynamic {
+		display: none;
+	}
+
+	.fyrcopy {
+		font-weight: 600;
+
+		@media screen and (min-width: 768px) {
+			font-size: 1.666666667em;
+		}
+	}
+
+	.fyrcta {
+		text-decoration: underline;
+		font-weight: 600;
+		color: #fff;
+		display: inline-block;
+		margin-top: 0.5em;
+
+		@media screen and (min-width: 768px) {
+			font-size: 1em;
+		}
+	}
+}
+
+.fyr-banner._dynamic {
+	grid-template-columns: auto;
+	grid-template-rows: 60% 30%;
+
+	@media screen and (min-width: 768px) {
+		grid-template-columns: 782px auto;
+		grid-template-rows: auto;
+	}
+
+	.fyr-dynamic strong {
+		text-transform: uppercase;
+		display: block;
+
+		@media screen and (min-width: 768px) {
+			display: inline;
+		}
+	}
+
+	.fyr-dynamic {
+		display: block;
+		grid-column: 1;
+		grid-row: 2;
+		text-align: center;
+		font-size: 0.777777778em;
+		color: #fff;
+		font-weight: 600;
+		padding: 1em;
+		align-self: center;
+
+		@media screen and (min-width: 768px) {
+			grid-column: 2;
+			grid-row: 1;
+			text-align: left;
+		}
+	}
+
+	.fyrmarker {
+		@media screen and (min-width: 768px) {
+			transform: translateX(-130px);
+			justify-self: end;
+		}
+	}
+}
+

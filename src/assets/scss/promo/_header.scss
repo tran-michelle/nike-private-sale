@@ -1,0 +1,47 @@
+.promo_universal-nav {
+	display: none;
+
+	@media screen and (min-width: 640px) {
+		display: block;
+		position: absolute;
+		top: 0;
+		height: 34px;
+		width: 100%;
+		background: #dbdbdb;
+	}
+}
+
+.promo_site-header {
+	position: relative;
+}
+
+.promo_faux-header {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	height: 51px;
+	background: #eee;
+	border-bottom: 1px solid #000;
+
+	@media (min-width: 640px) {
+		width: 970px;
+		border-bottom: none;
+	}
+}
+
+.hautelook .promo_faux-header {
+	@media screen and (min-width: 640px) {
+		height: 196px;
+		background: url(/assets/img/hautelook.jpg) top center no-repeat;
+		background-size: auto 100%;
+	}
+}
+
+.nordstromrack .promo_faux-header {
+	@media screen and (min-width: 640px) {
+		height: 225px;
+		background: url(/assets/img/nordstromrack.jpg) top center no-repeat;
+		background-size: auto 100%;
+	}
+}
+

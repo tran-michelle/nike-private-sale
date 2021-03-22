@@ -1,0 +1,19 @@
+// site overrides
+body { margin: 0; }
+
+.static-page * {
+	box-sizing: border-box;
+}
+
+hr {
+	border: none;
+	margin: 0;
+}
+
+.hautelook .nr-only { display: none; }
+
+.nordstromrack .hl-only { display: none; }
+
+.promo_divider {
+	border-top: 1px solid #c9c4c4;
+}

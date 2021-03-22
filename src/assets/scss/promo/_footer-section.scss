@@ -1,0 +1,56 @@
+.footer-section {
+	text-align: center;
+	width: 100%;
+	margin: 4em 0 2em 0;
+
+	@media screen and (min-width: 640px) {
+		min-width: 940px;
+		margin-bottom: 5em;
+	}
+
+	.sectiontitle {
+		color: #000;
+		font-size: 1.66666667em;
+		font-weight: 600;
+		line-height: normal;
+		margin-bottom: 0.5em;
+	}
+
+	.sectiontext {
+		color: #000;
+		font-size: 1em;
+		font-weight: 500;
+		line-height: normal;
+	}
+
+	.sectiontext:nth-of-type(2) {
+		margin-top: 1em;
+	}
+
+	.sectionlink,
+	.sectionlink:active,
+	.sectionlink:hover,
+	.sectionlink:visited {
+		display: inline-block;
+		color: #000;
+		font-size: 1em;
+		font-weight: 500;
+		line-height: normal;
+		text-decoration: underline;
+	}
+
+	.find-rack,
+	.find-rack:active,
+	.find-rack:hover,
+	.find-rack:visited {
+		display: inline-block;
+		color: #fff;
+		font-size: 1em;
+		font-weight: 600;
+		line-height: normal;
+		background: #2da8c8;
+		text-decoration: none;
+		margin-top: 1.4em;
+		padding: 0.7em 1.6em;
+	}
+}

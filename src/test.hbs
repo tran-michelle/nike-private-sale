@@ -1,0 +1,38 @@
+---
+layout: default.hbs
+businessUnit: hautelook
+preview: false
+---
+<!-- <link rel="stylesheet" href="https://fastly.hautelookcdn.com/ck1r7wpak01d71frofvr0buhj/nike.css"> -->
+{{> scripts}}
+{{> header}}
+{{!-- begin: content container --}}
+
+<div class="promo-page">
+	<div class="airmax section-grid">
+		<div class="grid"></div>
+		<div class="imgone">
+			<img src="https://fastly.hautelookcdn.com/ck1r7wpak01d71frofvr0buhj/nike1.png" alt="">
+		</div>
+		<h2 class="sectiontitle">
+			<span class="a">A</span>
+			<span class="i">i</span>
+			<span class="r">r</span>
+			<span class="m">M</span>
+			<span class="a-2">a</span>
+			<span class="x">x</span><br/>
+			<span class="a2">2</span>
+			<span class="a7">7</span>
+			<span class="a0">0</span>
+		</h2>
+		<div class="product-grid" id="airmax"></div>
+	</div>
+</div>
+
+
+{{> productfunction}}
+
+<script>
+	getProduct('airmax', 'https://www.nordstromrack.com/api/ecomcp/public/pages/c951a7fd-12d5-4a84-9d70-bcd72579e485/catalog?division=Women&department=Shoes&includeFlash=false&includePersistent=true&limit=10&sort=most_popular', 'nike-airmax');
+</script>
+

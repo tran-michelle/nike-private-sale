@@ -1,0 +1,112 @@
+.block {
+	position: absolute;
+	display: block;
+	width: 0.8em;
+	height: 0.8em;
+	z-index: -3;
+
+	@media screen and (min-width: 640px) {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+#women .block {
+	background: #c7fc0f;
+}
+
+#men .block {
+	background: #ffea00;
+}
+
+#kids .block {
+	background: #2c95b5;
+}
+
+.blockset1 {
+	.block1 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+
+	.block2 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+
+	.block3 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+
+	.block4 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+}
+
+.blockset2 {
+	.block1 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+
+	.block2 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+
+	.block3 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+
+	.block4 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+}
+
+.blockset3 {
+	.block1 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+
+	.block2 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+
+	.block3 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+
+	.block4 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+}
+
+.blockset4 {
+	.block1 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+
+	.block2 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+
+	.block3 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+
+	.block4 {
+		right: random(80) + %;
+		top: random(80) + %;
+	}
+}

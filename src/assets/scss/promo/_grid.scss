@@ -1,0 +1,9 @@
+.promo_container {
+	width: 100%;
+	position: relative;
+
+	@media (min-width: 500px) {
+		width: 970px;
+		margin: 0 auto;
+	}
+}

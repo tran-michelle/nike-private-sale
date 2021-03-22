@@ -1,0 +1,48 @@
+.promo_shopnow {
+	margin: 60px auto;
+	color: #454546;
+}
+
+.promo_shopnow p {
+	font-size: 22px;
+	line-height: 36px !important;
+	margin-bottom: 20px;
+}
+
+.hautelook .promo_shopnow .shopnow_title {
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.12em;
+}
+
+.nordstromrack .promo_shopnow .shopnow_title {
+	text-transform: uppercase;
+}
+
+.promo_shopnow p a {
+	text-decoration: underline;
+	color: #454546;
+}
+
+.hautelook .shopnow_link {
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	border-bottom: 1px solid #454546;
+	color: #454546;
+	text-decoration: none;
+	line-height: 1;
+	margin-bottom: 35px;
+	font-size: 16px;
+
+	span {
+		letter-spacing: 0;
+	}
+}
+
+.nordstromrack .shopnow_link {
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: underline;
+	color: #454546;
+}

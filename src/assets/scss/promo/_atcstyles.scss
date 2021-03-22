@@ -1,0 +1,60 @@
+.hautelook .atc-underline {
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	border-bottom: 1px solid $atccolor;
+	color: $atccolor;
+	line-height: 1;
+	margin-bottom: 35px;
+	font-size: 16px;
+
+	.atcb-link {
+		color: $atccolor;
+	}
+
+	@media (min-width: 500px) {
+		font-size: 19px;
+	}
+}
+
+.nordstromrack .atc-underline {
+	text-decoration: underline;
+	color: $atccolor;
+	margin-bottom: 35px;
+	font-size: 16px;
+
+	.atcb-link {
+		color: $atccolor;
+	}
+
+	@media (min-width: 500px) {
+		font-size: 18px;
+	}
+}
+
+.atc-underline:hover,
+.atc-underline:active,
+.atc-underline:focus { color: $atccolor; }
+
+.atc-button:visited,
+.atc-button:hover {
+	color: #fff !important;
+}
+
+.hautelook .atc-button {
+	background: #454546 !important;
+	text-decoration: none;
+	color: #fff;
+	line-height: 1;
+	padding: 20px 50px 18px;
+	font-size: 18px;
+}
+
+.nordstromrack .atc-button {
+	background: #454546 !important;
+	text-decoration: none;
+	color: #fff;
+	line-height: 1;
+	padding: 20px 50px 18px;
+	font-size: 18px;
+}

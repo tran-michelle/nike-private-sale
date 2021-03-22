@@ -1,0 +1,50 @@
+<div id="fyrBanner" class="fyr-banner">
+	<a href="https://stores.nordstromrack.com/search" class="fyrlink">&nbsp;</a>
+	<span class="fyrmarker"></span>
+	<div class="fyr-content">
+		<p class="fyrcopy">There's more cozy in store.</p>
+		<a class="fyrcta" href="https://stores.nordstromrack.com/search">Find Your Rack</a>
+	</div>
+	<div id="fyrDynamic" class="fyr-dynamic">
+		<p><strong>Store Nearby </strong><br class="_hidemobile"/>
+		<span id="fyrAddress"></span><br />
+		<span id="fyrCity"></span><br class="_hidemobile" />
+		<span id="fyrState"></span> <span id="fyrZip"></span></p>
+	</div>
+</div>
+
+<script>
+function getLocation() {
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(getPosition);
+	}
+}
+function getPosition(position) {
+	var request = new XMLHttpRequest();
+	var location = "https://www.nordstromrack.com/api/store-locations?miles=25&latitude="+ position.coords.latitude +"&longitude=" + position.coords.longitude;
+	var app = document.getElementById(fyrDynamic);
+
+	request.open('GET', location)
+	request.send();
+	request.onreadystatechange = function(){
+		if(this.readyState==4){
+			var data = JSON.parse(request.responseText);
+
+			if(data !== undefined) {
+				document.getElementById("fyrBanner").classList.add("_dynamic");
+				var fyrCity = data.stores[0].city;
+				document.getElementById('fyrCity').textContent = fyrCity;
+				var fyrAddress = data.stores[0].street_address;
+				document.getElementById('fyrAddress').textContent = fyrAddress;
+				var fyrState = data.stores[0].state;
+				document.getElementById('fyrState').textContent = fyrState;
+				var fyrZip = data.stores[0].postal_code;
+				document.getElementById('fyrZip').textContent = fyrZip;
+			} else {
+
+			}
+		}
+	}
+}
+getLocation();
+</script>
